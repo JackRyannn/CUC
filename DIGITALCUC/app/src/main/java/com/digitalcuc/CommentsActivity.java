@@ -24,12 +24,6 @@ import com.digitalcuc.model.Parameter;
 import com.digitalcuc.mywidget.TitleBar;
 import com.digitalcuc.service.SyncHttp;
 import com.digitalcuc.util.IntegerUtil;
-
-/**
- *@author coolszy
- *@date 2012-3-22
- *@blog http://blog.92coding.com
- */
 public class CommentsActivity extends Activity
 {
 	private final int COMMENTSCOUNT = 10; //返回新闻
@@ -99,13 +93,8 @@ public class CommentsActivity extends Activity
 		});
 	
 }
-//	String url = "http://10.0.2.2:8080/web/postComment";
-//	List<Parameter> params = new ArrayList<Parameter>();
-//	params.add(new Parameter("nid", mCategoryNids.get(mCurrentPosition)+""));
-//	params.add(new Parameter("region", "安徽"));
-//	params.add(new Parameter("content", mNewsReplyEditText.getText().toString()));
-//	
-	private final int PostComment(int id,String content){
+
+	private int PostComment(int id,String content){
 		int retCode = 0;
 		String url = "/postComment";
 		List<Parameter> params = new ArrayList<Parameter>();

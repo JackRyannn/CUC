@@ -4,4 +4,4 @@
     <item android:state_pressed="true"></item>
     <item android:drawable="@drawable/titlebar_button_refresh"/>
 
-</selector><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/drawable/titlebar_btn_refresh_selector.xml -->
+</selector><!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/drawable/titlebar_btn_refresh_selector.xml -->

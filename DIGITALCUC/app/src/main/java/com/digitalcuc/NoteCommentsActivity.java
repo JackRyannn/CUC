@@ -9,12 +9,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-
-/**
- *@author coolszy
- *@date 2012-3-22
- *@blog http://blog.92coding.com
- */
 public class NoteCommentsActivity extends Activity
 {
 	@Override
@@ -28,9 +22,9 @@ public class NoteCommentsActivity extends Activity
 		for (int i = 0; i < 10; i++)
 		{
 			HashMap<String, String> hashMap = new HashMap<String, String>();
-			hashMap.put("commentator_from","±±¾©ÍøÓÑ");
+			hashMap.put("commentator_from","111");
 			hashMap.put("comment_ptime", "2014-09-02 20:21:22");
-			hashMap.put("comment_content", "ÄÚÈÝ");
+			hashMap.put("comment_content", "222");
 			comments.add(hashMap);
 		}
 		SimpleAdapter commentsAdapter = new SimpleAdapter(this, comments, R.layout.comments_list_item, new String[]

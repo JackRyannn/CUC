@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
     private int mCid = 1;
     private Context mContext;
     private TitleBar titleBar;
-    private ArrayList<Map<String,Object>> arrayList = new ArrayList<Map<String, Object>>();
+    private ArrayList<Map<String, Object>> arrayList = new ArrayList<Map<String, Object>>();
     private ListView list_menu;
     private SimpleAdapter simpleAdapter;
     public SlidingMenu menu;
@@ -53,32 +53,65 @@ public class MainActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         menu = new SlidingMenu(this);
-        menu.setMode(SlidingMenu.LEFT);
-            // 设置触摸屏幕的模式
-            menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-            menu.setShadowWidthRes(R.dimen.shadow_width);
-            menu.setShadowDrawable(R.drawable.shadow);
-
-            // 设置滑动菜单视图的宽度
-            menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
-            // 设置渐入渐出效果的值
-            menu.setFadeDegree(0.35f);
-            /**
-             * SLIDING_WINDOW will include the Title/ActionBar in the content
-             * section of the SlidingMenu, while SLIDING_CONTENT does not.
-             */
-            //把滑动菜单添加进所有的Activity中，可选值SLIDING_CONTENT ， SLIDING_WINDOW
-            menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
-            //为侧滑菜单设置布局
+        menu.setMode(SlidingMenu.RIGHT);
+        // 设置触摸屏幕的模式
+        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        menu.setShadowWidthRes(R.dimen.shadow_width);
+        menu.setShadowDrawable(R.drawable.shadow);
+        // 设置滑动菜单视图的宽度
+        menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+        // 设置渐入渐出效果的值
+        menu.setFadeDegree(0.35f);
+        /**
+         * SLIDING_WINDOW will include the Title/ActionBar in the content
+         * section of the SlidingMenu, while SLIDING_CONTENT does not.
+         */
+        //把滑动菜单添加进所有的Activity中，可选值SLIDING_CONTENT ， SLIDING_WINDOW
+        menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+        //为侧滑菜单设置布局
         menu.setMenu(R.layout.leftmenu);
-        Map<String,Object> map = new HashMap<String, Object>();
-        for(int i =0;i<8;i++) {
-            map.put("menu_name","菜单");
+        for (int i = 0; i < getResources().getStringArray(R.array.menu).length; i++) {
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("menu_name", getResources().getStringArray(R.array.menu)[i]);
             arrayList.add(map);
         }
-        list_menu = (ListView)menu.findViewById(R.id.menu_list);
-        simpleAdapter = new SimpleAdapter(this,arrayList,R.layout.menu_item,new String[]{"menu_name"},new int[]{R.id.menu_name});
+        list_menu = (ListView) menu.findViewById(R.id.menu_list);
+        simpleAdapter = new SimpleAdapter(this, arrayList, R.layout.menu_item, new String[]{"menu_name"}, new int[]{R.id.menu_name});
         list_menu.setAdapter(simpleAdapter);
+        list_menu.setOnItemClickListener(new OnItemClickListener() {
+            Intent intent = new Intent();
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i) {
+                    case 0:
+                        intent.setClass(MainActivity.this,NewsActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent.setClass(MainActivity.this,BbsActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+//                        intent.setClass(MainActivity.this,LifeActivity.class);
+//                        startActivity(intent);
+                        Toast.makeText(getApplication(),"广院生活",Toast.LENGTH_SHORT).show();
+                        break;
+                    case 3:
+                        intent.setClass(MainActivity.this,MapActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent.setClass(MainActivity.this,IActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        MainActivity.this.finish();
+                        break;
+
+
+                }
+            }
+        });
 
 
         titleBar = (TitleBar) findViewById(R.id.titlebar);
@@ -94,8 +127,6 @@ public class MainActivity extends Activity {
         task.execute(mCid, 0, false);
 
         mContext = this;
-        BottomBtn Btn = (BottomBtn) findViewById(R.id.bottombtn);
-        Btn.sendContext(mContext);
 
         mNewsList.setOnItemClickListener(new OnItemClickListener() {
             @Override

@@ -148,4 +148,4 @@
         android:layout_below="@+id/textView12"
         android:text="TextView" />
 
-</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/activity_map.xml -->
+</RelativeLayout><!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/layout/activity_map.xml -->

@@ -22,4 +22,4 @@
         android:contentDescription="@string/app_name"
         android:src="@drawable/toolbar_plus" />
 
-</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/btn_bottom.xml -->
+</RelativeLayout><!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/layout/btn_bottom.xml -->

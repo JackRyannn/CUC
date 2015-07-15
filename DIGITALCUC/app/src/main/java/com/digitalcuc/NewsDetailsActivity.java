@@ -60,7 +60,7 @@ public class NewsDetailsActivity extends Activity {
 	{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.newsdetails);
+		setContentView(R.layout.activity_newsdetail);
 		mTitleBar = (TitleBar)findViewById(R.id.titlebar);
 		mTitleBar.setTitle("");
 		mTitleBar.setIv2Enable(View.INVISIBLE);
@@ -200,12 +200,6 @@ public class NewsDetailsActivity extends Activity {
 		}
 	}
 	
-	
-	/**
-	 * 获取新闻详细信息
-	 * 
-	 * @return
-	 */
 	private String getNewsBody()
 	{
 		String retStr = "网络连接失败，请稍后再试";

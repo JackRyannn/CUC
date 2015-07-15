@@ -3,31 +3,39 @@ package com.digitalcuc;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.digitalcuc.mywidget.TitleBar;
+
 public class IActivity extends Activity {
-//	private final int SUCCESS = 1;
-//	private final int LOADERROR = 0;
-//	private Button btn1;
-	Context mContext;
-	int num = 2012;
-	String icon;
+	private TitleBar mTitleBar;
+	private Button commit;
+	private Single_Account single_account = new Single_Account();
+	private TextView tv1;
+
+
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_i);
-		mContext=this;
-		BottomBtn Btn=(BottomBtn)findViewById(R.id.bottombtn);
-		Btn.sendContext(mContext);
-//		btn1 = (Button)findViewById(R.id.button1);
-//		btn1.setOnClickListener(new OnClickListener(){
-//			@Override
-//			public void onClick(View v){
-//				 icon = ImageUtil.Image2String(getApplicationContext(),R.drawable.ic_launcher);
-//				 UpdateAccountAsyncTask task = new UpdateAccountAsyncTask();
-//				 task.execute(num,icon);
-//			}
-//		});
-		
-		 
+		tv1 = (TextView)findViewById(R.id.setting_name);
+		tv1.setText(single_account.getAccount_name());
+		mTitleBar = (TitleBar)findViewById(R.id.titlebar);
+		mTitleBar.setIv2Enable(View.INVISIBLE);
+		mTitleBar.setBtn4Enable(View.VISIBLE);
+		commit = mTitleBar.getBtn4();
+		commit.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Toast.makeText(getApplicationContext(),"确认",Toast.LENGTH_SHORT).show();
+				IActivity.this.finish();
+			}
+		});
 	}
 	
 

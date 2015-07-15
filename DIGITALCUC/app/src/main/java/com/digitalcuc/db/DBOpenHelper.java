@@ -20,7 +20,6 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 	     public void onCreate(SQLiteDatabase db) {  
 	    	 this.db=db;
 	    	 this.db.execSQL("CREATE TABLE "+"tbl_stu(_id INTEGER PRIMARY KEY AUTOINCREMENT,num INTEGER, password INTEGER,phone INTEGER);");  
-	         // TODO 创建数据库后，对数据库的操作     
 	     }     
 	     
 	     @Override    
@@ -31,9 +30,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 	 @Override    
 	 public void onOpen(SQLiteDatabase db) {     
 	         super.onOpen(db);       
-	         // TODO 每次成功打开数据库后首先被执行     
-	     }     
-//	 插入方法
+	     }
 	 public void insert(ContentValues values){
 		 SQLiteDatabase db=getWritableDatabase();
 		 db.insert(TBL_NAME, null, values);

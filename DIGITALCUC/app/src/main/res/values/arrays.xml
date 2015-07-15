@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string-array name="menu">
+        <item>广院新闻</item>
+        <item>广院论坛</item>
+        <item>广院生活</item>
+        <item>广院地图</item>
+        <item>设置</item>
+        <item>退出</item>
+    </string-array>
     <string-array name="categories">
         <item>1|广院天地</item>
         <item>2|理工学部</item>

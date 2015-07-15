@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="BbsCategories">
         <item>1|仙境中传</item>
@@ -16,25 +16,33 @@
         <item>5|仙境蓬莱</item>
         <item>6|NBA世界</item>
     </string-array>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/color.xml -->
+    <string-array name="menu">
+        <item>广院新闻</item>
+        <item>广院论坛</item>
+        <item>广院生活</item>
+        <item>广院地图</item>
+        <item>设置</item>
+        <item>退出</item>
+    </string-array>
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <color name="blue">#0000ff</color>
     <color name="green">#00bedc</color>
     <item name="white" type="color">#ffffffff</item>
     <declare-styleable name="ButtonBarContainerTheme"><attr format="reference" name="buttonBarStyle"/><attr format="reference" name="buttonBarButtonStyle"/></declare-styleable>
     <declare-styleable name="SlidingMenu"><attr name="mode"><enum name="left" value="0"/><enum name="right" value="1"/></attr><attr format="reference" name="viewAbove"/><attr format="reference" name="viewBehind"/><attr format="dimension" name="behindOffset"/><attr format="dimension" name="behindWidth"/><attr format="float" name="behindScrollScale"/><attr name="touchModeAbove"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr name="touchModeBehind"><enum name="margin" value="0"/><enum name="fullscreen" value="1"/></attr><attr format="reference" name="shadowDrawable"/><attr format="dimension" name="shadowWidth"/><attr format="boolean" name="fadeEnabled"/><attr format="float" name="fadeDegree"/><attr format="boolean" name="selectorEnabled"/><attr format="reference" name="selectorDrawable"/></declare-styleable>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="shadow_width">15dp</dimen>
     <dimen name="slidingmenu_offset">200dp</dimen>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/color.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/color.xml -->
     <eat-comment/>
     <item name="category_title_normal_background" type="drawable">#ffadb2ad</item>
     <item name="main_background" type="drawable">#ffe7e7e7</item>
     <item name="newslist_item_background" type="drawable">#ffe7e7e7</item>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="category_arrow_right" type="id"/>
     <item name="category_layout" type="id"/>
@@ -87,15 +95,15 @@
     <item name="newslist_item_ptime" type="id"/>
     <item name="newslist_item_source" type="id"/>
     <item name="newslist_item_title" type="id"/>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/build/intermediates/exploded-aar/DIGITALCUC/slidelibrary/unspecified/res/values/values.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/build/intermediates/exploded-aar/DIGITALCUC/slidelibrary/unspecified/res/values/values.xml -->
     <eat-comment/>
     <item name="selected_view" type="id"/>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/ids.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="titlebar_layout" type="id"/>
     <item name="titlebar_refresh" type="id"/>
     <item name="titlebar_title" type="id"/>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">DigitalCUC</string>
@@ -133,7 +141,7 @@
     <string name="no_notes">没有帖子</string>
     <string name="reg_act">激活</string>
     <string name="reg_phone">手机</string>
-    <!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--

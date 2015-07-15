@@ -26,6 +26,7 @@ public class TitleBar extends RelativeLayout {
     Button btn1;
     Button btn2;
     Button btn3;
+    Button btn4;
 
     public TitleBar(Context context) {
         super(context);
@@ -40,6 +41,7 @@ public class TitleBar extends RelativeLayout {
         btn1 = (Button) findViewById(R.id.refresh);
         btn2 = (Button) findViewById(R.id.comments_pic);
         btn3 = (Button) findViewById(R.id.comments_number);
+        btn4 = (Button) findViewById(R.id.commit);
         iv1 = (ImageView) findViewById(R.id.imageButton);
         iv2 = (ImageView) findViewById(R.id.imageButton2);
         tv1 = (TextView) findViewById(R.id.textView);
@@ -85,11 +87,19 @@ public class TitleBar extends RelativeLayout {
         btn3.setVisibility(i);
     }
 
+    public void setBtn4Enable(int i) {
+        btn4.setVisibility(i);
+    }
+
     public Button getBtn2() {
         return btn2;
     }
 
     public Button getBtn3() {
         return btn3;
+    }
+
+    public Button getBtn4() {
+        return btn4;
     }
 }

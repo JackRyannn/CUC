@@ -39,6 +39,17 @@
         android:layout_alignParentRight="true"
         android:visibility="invisible"
         />
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_confirm"
+        android:visibility="invisible"
+        />
+
     <Button
         android:id="@+id/comments_pic"
         android:layout_width="50dp"

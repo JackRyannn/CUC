@@ -81,4 +81,4 @@
         android:background="@drawable/newslist_item_go_detail_selector"
         android:gravity="center_vertical" />
 
-</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/newslist_item.xml -->
+</RelativeLayout><!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/layout/newslist_item.xml -->

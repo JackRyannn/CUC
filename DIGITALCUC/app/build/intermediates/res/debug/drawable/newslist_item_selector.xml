@@ -6,4 +6,4 @@
     <item android:drawable="@drawable/list_selected_background" android:state_focused="true"/>
     <item android:drawable="@drawable/newslist_item_background"/>
 
-</selector><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/drawable/newslist_item_selector.xml -->
+</selector><!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/drawable/newslist_item_selector.xml -->

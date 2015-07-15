@@ -39,6 +39,17 @@
         android:layout_alignParentRight="true"
         android:visibility="invisible"
         />
+
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_confirm"
+        android:visibility="invisible"
+        />
+
     <Button
         android:id="@+id/comments_pic"
         android:layout_width="50dp"
@@ -62,4 +73,4 @@
         android:visibility="invisible"
         android:textColor="@color/white" />
 </RelativeLayout>
-<!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/widget_titlebar.xml -->
+<!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/layout/widget_titlebar.xml -->

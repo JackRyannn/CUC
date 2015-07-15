@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/newslist_item_go_detail_selected" android:state_pressed="true"/>
     <item android:drawable="@drawable/newslist_item_go_detail"/>
 
-</selector><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/drawable/newslist_item_go_detail_selector.xml -->
+</selector><!-- From: file:/Users/pro/学习/GitHub/CUC/DIGITALCUC/app/src/main/res/drawable/newslist_item_go_detail_selector.xml -->
