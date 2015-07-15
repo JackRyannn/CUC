@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/pro/学习/DIGITALCUC/app/libs/baidumapapi_v3_1_1.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="fd80439473ff6e0e9ae45f95af48302271e1e45e">
+        <dex dex="/Users/pro/学习/DIGITALCUC/app/build/intermediates/pre-dexed/baidu/debug/baidumapapi_v3_1_1-f204ac47ab0720a562508b129b77db124c7f716f.jar" />
+    </item>
+    <item
+        jar="/Users/pro/Development/adt-bundle-mac-x86_64-20131030/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/pro/学习/DIGITALCUC/app/build/intermediates/pre-dexed/baidu/debug/support-v4-19.1.0-9821fa9acd854e8b8dc5106234a2953c541f151d.jar" />
+    </item>
+    <item
+        jar="/Users/pro/学习/DIGITALCUC/app/libs/locSDK_4.2.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="41b93335a2753c93f8b8f56741615cb81ea72437">
+        <dex dex="/Users/pro/学习/DIGITALCUC/app/build/intermediates/pre-dexed/baidu/debug/locSDK_4.2-33279a5495e2a954c4d5fdd49cc05af1709d12bc.jar" />
+    </item>
+    <item
+        jar="/Users/pro/学习/DIGITALCUC/app/build/intermediates/exploded-aar/DIGITALCUC/slidelibrary/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc2"
+        sha1="31558f5c300a1dde10e15829bbf5c8aa4f89ebc3">
+        <dex dex="/Users/pro/学习/DIGITALCUC/app/build/intermediates/pre-dexed/baidu/debug/classes-52f5554f0db7e13f1c09a130fdcb5e4b48e5833d.jar" />
+    </item>
+
+</items>

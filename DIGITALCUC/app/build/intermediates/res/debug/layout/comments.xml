@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comments_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background" >
+    <com.digitalcuc.mywidget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp">
+    </com.digitalcuc.mywidget.TitleBar>
+    <ListView
+        android:id="@+id/comments_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/comments_reply_frame"
+        android:layout_marginTop="50dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_separator_line"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/newslist_item_selector"
+        android:scrollbars="none" />
+
+    <include
+        android:id="@+id/comments_reply_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/reply_frame"
+        android:clickable="true" />
+
+</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/comments.xml -->

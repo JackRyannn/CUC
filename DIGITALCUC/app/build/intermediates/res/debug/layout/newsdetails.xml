@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/newsdetails_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    >
+    <com.digitalcuc.mywidget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.digitalcuc.mywidget.TitleBar>
+
+    <ViewFlipper
+        android:id="@id/news_body_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40.0dip"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/main_background" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/reply_frame"
+        android:clickable="true" />
+
+</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/newsdetails.xml -->

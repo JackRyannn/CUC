@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="400.32812dip"
+        android:layout_height="217.33331dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/write_operation_bg"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15.0dip"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="30.0dip"
+                android:layout_height="1.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_bbs"
+                    android:textColor="#ffcecece"
+                    android:textSize="16.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="30.0dip"
+                android:layout_height="1.0dip"
+                android:layout_gravity="center_vertical"
+                android:background="#ffffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="63.329987dip"
+                android:layout_height="63.329987dip"
+                android:orientation="vertical"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableTop="@drawable/write_operation_photo"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/bbs_1"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="63.329987dip"
+                android:layout_height="63.329987dip"
+                android:layout_marginLeft="30.0dip"
+                android:orientation="vertical"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableTop="@drawable/write_operation_pic"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/bbs_2"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="63.329987dip"
+                android:layout_height="63.329987dip"
+                android:layout_marginLeft="30.0dip"
+                android:orientation="vertical"
+                tools:ignore="UselessParent" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableTop="@drawable/write_operation_talk"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/bbs_3"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="63.329987dip"
+                android:layout_height="63.329987dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableTop="@drawable/write_operation_diary"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/bbs_4"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="63.329987dip"
+                android:layout_height="63.329987dip"
+                android:layout_marginLeft="30.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableTop="@drawable/write_operation_location"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/fresh"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="63.329987dip"
+                android:layout_height="63.329987dip"
+                android:layout_marginLeft="30.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5.0dip"
+                    android:drawableTop="@drawable/write_operation_gif"
+                    android:shadowColor="#ff000000"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="@string/back"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/bbs_tab.xml -->

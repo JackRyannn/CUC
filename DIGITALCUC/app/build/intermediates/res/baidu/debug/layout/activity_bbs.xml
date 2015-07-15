@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+  <RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar_background" >
+        <ProgressBar
+            android:id="@+id/loadnotes_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="10.0dip"
+            android:clickable="false"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/titlebar_backbtn"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/backbtn" />
+
+        <Button
+            android:id="@+id/titlebar_refresh"
+            android:layout_marginTop="7dp"
+            android:layout_width="42dip"
+            android:layout_height="38dip"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/titlebar_button_refresh" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/noteslist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/list_separator_line"
+            android:listSelector="@drawable/newslist_item_selector" >
+        </ListView>
+
+        <com.digitalcuc.BbsBottomBtn
+            android:id="@+id/bbsbottombtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+        </com.digitalcuc.BbsBottomBtn>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/activity_bbs.xml -->

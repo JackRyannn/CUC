@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="categories">
+        <item>1|广院天地</item>
+        <item>2|理工学部</item>
+        <item>3|艺术学部</item>
+        <item>4|吃喝玩乐</item>
+        <item>5|仙境蓬莱</item>
+        <item>6|NBA世界</item>
+    </string-array>
+    <string-array name="BbsCategories">
+        <item>1|仙境中传</item>
+        <item>2|学无止境</item>
+        <item>3|吃喝玩乐</item>
+        <item>4|我爱毛泽东</item>
+    </string-array>
+
+</resources>

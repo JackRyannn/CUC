@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/r_lib"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lib"
+    android:orientation="vertical" >
+
+    
+
+    <com.digitalcuc.BottomBtn
+        android:id="@+id/bottombtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+    </com.digitalcuc.BottomBtn>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="所有座位数：8"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="15dp"
+        android:text="可选座位数："
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_centerHorizontal="true"
+        android:text="刷新" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignRight="@+id/textView2"
+        android:text="n"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageButton
+        android:id="@+id/ImageButton23"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ImageButton21"
+        android:layout_below="@+id/ImageButton21"
+        android:layout_marginTop="45dp"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+    <ImageButton
+        android:id="@+id/ImageButton22"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:rotation="180"
+        android:layout_above="@+id/ImageButton23"
+        android:layout_alignRight="@+id/ImageView02"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+    <ImageButton
+        android:id="@+id/ImageButton24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/ImageView02"
+        android:layout_alignTop="@+id/ImageButton23"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:rotation="180"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+    <ImageButton
+        android:id="@+id/ImageButton21"
+        android:rotation="180"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/ImageView02"
+        android:layout_toRightOf="@+id/imageButton"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageButton"
+        android:src="@drawable/desk" />
+
+    <ImageButton
+        android:id="@+id/ImageButton12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignLeft="@+id/imageView1"
+        android:background="#00ffffff"
+        android:rotation="180"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:src="@drawable/desk" />
+
+    <ImageButton
+        android:id="@+id/ImageButton14"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignTop="@+id/ImageButton23"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+    <ImageButton
+        android:id="@+id/ImageButton13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/ImageButton14"
+        android:layout_toLeftOf="@+id/imageButton"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/nonseat" />
+
+</RelativeLayout>

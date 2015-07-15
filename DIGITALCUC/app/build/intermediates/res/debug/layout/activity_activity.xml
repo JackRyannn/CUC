@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/post" />
+	 <ImageButton
+        android:id="@+id/imgbtn_l"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="58dp"
+        android:background="#00ffffff"
+        android:rotation="270"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/arrow" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_r"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgbtn_l"
+        android:background="#00ffffff"
+        android:rotation="90"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow" />
+    <com.digitalcuc.BottomBtn
+        android:id="@+id/bottombtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </com.digitalcuc.BottomBtn>
+
+   
+
+</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/activity_activity.xml -->

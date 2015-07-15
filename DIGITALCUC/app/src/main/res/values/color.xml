@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="main_background" type="drawable">#ffe7e7e7</item>
+    <item name="white" type="color">#ffffffff</item>
+    <item name="newslist_item_background" type="drawable">#ffe7e7e7</item>
+    <item name="category_title_normal_background" type="drawable">#ffadb2ad</item>
+
+    <color name="blue">#0000ff</color>
+    <color name="green">#00bedc</color>
+
+</resources>

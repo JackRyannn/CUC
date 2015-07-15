@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/green">
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/backbtn"
+        android:id="@+id/imageButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Jack Ryan"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:id="@+id/textView" />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/widget_titlebar_menu"
+        android:id="@+id/imageButton2" />
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="42dip"
+        android:layout_height="38dip"
+        android:background="@drawable/titlebar_button_refresh"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+    <Button
+        android:id="@+id/comments_pic"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:background="@drawable/comment_pic"/>
+
+    <Button
+        android:id="@+id/comments_number"
+        android:layout_width="30dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/commentnum_pic"
+        android:textSize="12sp"
+        android:text="0"
+        android:visibility="invisible"
+        android:textColor="@color/white" />
+</RelativeLayout>

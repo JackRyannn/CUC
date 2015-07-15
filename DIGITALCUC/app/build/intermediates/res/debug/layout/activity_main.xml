@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <com.digitalcuc.mywidget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.digitalcuc.mywidget.TitleBar>
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/titlebar"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:src="@drawable/newspic" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/news_title"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/newslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_separator_line"
+        android:listSelector="@drawable/newslist_item_selector" />
+
+    <com.digitalcuc.BottomBtn
+        android:id="@+id/bottombtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+    </com.digitalcuc.BottomBtn>
+
+</RelativeLayout><!-- From: file:/Users/pro/学习/DIGITALCUC/app/src/main/res/layout/activity_main.xml -->

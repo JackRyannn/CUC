@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+
+    <com.digitalcuc.mywidget.TitleBar
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </com.digitalcuc.mywidget.TitleBar>
+    <!-- 这是黑色长条框 -->
+
+    <RelativeLayout
+        android:id="@+id/categorybar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="0dip"
+        android:background="@drawable/categorybar_background" >
+
+        <HorizontalScrollView
+            android:id="@+id/category_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="100.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/category_arrow_right"
+            android:layout_width="6.0dip"
+            android:layout_height="10.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/categorybar_right_arrow" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/newslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_separator_line"
+        android:listSelector="@drawable/newslist_item_selector" />
+
+</LinearLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_news" />
+
+</LinearLayout>
+-->

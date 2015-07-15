@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_reply_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/news_reply_layout_background"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/news_reply_img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3.0dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/news_reply_edittext"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:inputType="text"
+            android:maxLength="500" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="2.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/news_reply_layout_divider" />
+
+        <ImageButton
+            android:id="@+id/news_share_btn"
+            android:layout_width="wrap_content"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/news_share_btn" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/news_reply_layout_divider" />
+
+        <ImageButton
+            android:id="@+id/news_collect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleX="2.5"
+            android:scaleY="2.5"
+            android:src="@drawable/news_collect_btn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/news_reply_edit_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/news_reply_layout_divider"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/news_reply_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/news_reply_post_btn_down"
+            android:text="@string/action_settings"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
